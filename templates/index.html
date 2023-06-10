@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Goid</title>
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="../static/images/logo.png" alt="" />
+            <span>
+              HP
+            </span>
+          </a>
+
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="side_heading">
+        <h5>
+          G
+          o
+          o
+          d
+          F
+          o
+          o
+          d
+        </h5>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 offset-md-1">
+            <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                  Object Detection
+                </li>
+                
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="img-box b-1">
+                    <img src="../static/images/slider-img.png" alt="" />
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class=" col-md-5 offset-md-1">
+            <div class="detail-box">
+              <h1>
+                Waste <br>
+                Management
+              </h1>
+              <p>
+                This is the waste management System to segeregate Bio-Degradable Non-BioDegradable Wastes.
+              </p>
+
+              <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                  <div class="custom-file" >
+                    <input type="file" class="custom-file-input form-control " required accept=".jpeg, .jpg, .png, .gif, .tiff, .tif, .bmp, .svg, .webp, .heic, .heif, .raw, .psd, .mp4, .avi, .mov, .wmv, .mkv, .flv, .webm, .m4v, .3gp, .mpeg, .mpg" id="inputGroupFile04" name="file">
+                    <label class="custom-file-label"  for="inputGroupFile04">Choose file</label>
+                  </div>
+                  <div class="input-group-append">
+                    <button class="btn btn-primary"
+                       id="uploadButton" type="submit">Upload</button>
+                  </div>
+                </div>
+              </form>  
+              <form action="/webcam" method="post" enctype="multipart/form-data">
+                <div class="input-group-append">
+                  <button class="btn btn-primary"
+                     id="uploadButton" type="submit">Webcam</button>
+                </div>
+              </form>    
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 35,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
+</body>
+
+</html>
